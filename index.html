@@ -104,17 +104,6 @@
 
   <script>
     let products = JSON.parse(localStorage.getItem('products')) || [];
-
-    // Добавляем товар при первом запуске
-    if (products.length === 0) {
-      products.push({
-        imageUrl: 'https://images.prom.ua/5038546279_igrovij-kompyuter-ryzen.jpg',
-        price: 80000,
-        description: 'Игровой компьютер Ryzen 5 5600/RX 5700XT 8GB/RAM 32GB/SSD 1TB'
-      });
-      localStorage.setItem('products', JSON.stringify(products));
-    }
-
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let users = JSON.parse(localStorage.getItem('users')) || [];
     let currentUser = localStorage.getItem('currentUser') || null;
