@@ -114,17 +114,6 @@
       });
       localStorage.setItem('products', JSON.stringify(products));
     }
-    let products = JSON.parse(localStorage.getItem('products')) || [];
-
-    // Добавляем товар при первом запуске
-    if (products.length === 0) {
-      products.push({
-        imageUrl: 'https://gamingpc.com.ua/image/cache/770x510/a4027514a9afe9339c1e352ca9d081e2.webp',
-        price: 80000,
-        description: 'Игровой компьютер Ryzen 5 5600/RX 5700XT 8GB/RAM 32GB/SSD 1TB'
-      });
-      localStorage.setItem('products', JSON.stringify(products));
-    }
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let users = JSON.parse(localStorage.getItem('users')) || [];
